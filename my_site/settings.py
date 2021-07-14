@@ -28,8 +28,9 @@ SECRET_KEY = 'django-insecure-g(%@_v3=h63=6yr#6wja8*%8(uxaarzy5l$b(_*uw$4)5f2!h*
 DEBUG = True
 
 ALLOWED_HOSTS = [
+'nk323.herokuapp.com'
     # getenv("APP_HOST")
-    'https://nk323.herokuapp.com'
+    #'https://nk323.herokuapp.com'
 ]
 
 
