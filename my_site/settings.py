@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-from os import getenv
+from os import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-g(%@_v3=h63=6yr#6wja8*%8(uxaarzy5l$b(_*uw$4)5f2!h*
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = getenv("IS_DEVELOPMENT", True)
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
 'nk323.herokuapp.com'
@@ -127,7 +127,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
+# STATIC_ROOT = BASE_DIR / "staticfiles"1
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 STATIC_URL = '/static/'
 
