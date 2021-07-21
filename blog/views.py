@@ -152,6 +152,7 @@ def posts(request):
 #         "post_tags": identified_post.tags.all()
 #     })
 
+
 # class SinglePostView(DetailView):
 #     template_name = "blog/post-detail.html"
 #     model = Post
@@ -162,6 +163,7 @@ def posts(request):
 #         context["post_tags"]= self.object.tags.all()
 #         context['comment_form']= CommentForm
 #         return context
+# a
 
 class SinglePostView(View):
 
